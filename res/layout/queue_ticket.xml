@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.eurina.android.mobilequeue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mqTicketView"    
+    android:background="#FFF5FFFA"
+    android:orientation="vertical">    
+    
+    <!--  title bar -->
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="58dip"
+        android:layout_weight="0"
+        android:padding="0dip"
+        android:orientation="horizontal"
+        android:background="@drawable/title_bg">
+        
+        <ImageView
+        	android:id="@+id/title_bar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"            
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:padding="3dip"
+            android:paddingLeft="20dip"
+        	android:src="@drawable/wgt_logo" />        
+            
+        <TextView
+            android:id="@+id/mqTicketTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Mobile Queue" />
+            
+        <ImageView
+            android:id="@+id/mq_ticket_list"
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"            
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:padding="3dip"
+            android:paddingLeft="20dip"
+        	android:src="@drawable/vmore" />
+
+    </LinearLayout>  
+    
+	<!--  the real queue number -->
+    <TextView
+    		android:id="@+id/mqWlmTitle"
+            android:text="56"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		style="@style/Text.QueueNr" />
+     
+    <!--  the real time info on how many people sitting before you and the estimated waiting time -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical">
+	    
+	    <!--  the realtime info on how many people sitting before you -->        
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:orientation="horizontal">
+	    	<TextView
+	            android:text="@string/mq_ticket_preced"
+	            android:gravity="left"
+	            android:padding="3dip"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		style="@style/Text.WordType"
+	    		android:textColor="#FFFAD700" />
+	    	<TextView
+	    		android:id="@+id/mqPrecedFolk"
+	            android:text="5"
+	            android:gravity="center"
+	            android:padding="3dip"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+            	android:layout_weight="1"
+	    		style="@style/Text.WordType"
+	    		android:textColor="#FFFAD700" />
+	    </LinearLayout>
+	    <!--  the realtime info on the estimated waiting time -->
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:orientation="horizontal">
+	    	<TextView
+	            android:text="@string/mq_ticket_waitingtime"
+	            android:gravity="left"
+	            android:padding="3dip"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		style="@style/Text.WordType"
+	    		android:textColor="#FFFAD700" />
+	    	<TextView
+	    		android:id="@+id/mqWaitMin"
+	            android:text="5"
+	            android:gravity="center"
+	            android:padding="3dip"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+            	android:layout_weight="1"
+	    		style="@style/Text.WordType"
+	    		android:textColor="#FF88D7BB" />
+	    </LinearLayout>
+    </LinearLayout>	   
+        
+    <!-- showing time date -->     
+    <TextView
+       	android:id="@+id/mqTicketDate"
+       	android:text="15:58 11, May, 2011"	
+       	android:textColor="#FF0000FF"	
+        android:paddingRight="0dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   	<!-- simulating a link for Notes -->     
+    <TextView
+       	android:id="@+id/mqTicketNotes"
+       	android:text="@string/mq_ticket_notes"	
+       	android:textColor="#FF0000FF"	
+        android:paddingRight="15dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="right" 
+        android:gravity="left" />
+   <FrameLayout 
+   		android:id="@+id/mqTicketFrameLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="125dip"
+	    android:gravity="center"	    
+        android:layout_weight="1"
+	    android:theme="@style/MQTheme"
+	    android:orientation="vertical">
+	    <!-- at runtime, a new WebView will be added for postClickedEvent -->
+	    <WebView
+	        android:id="@+id/webview_ticket_note"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" />
+	    <!-- Place an AdMob ad at the bottom of the screen. -->
+	    <!-- It has white text on a black background. -->
+	    <!-- com.admob.android.ads.AdView  
+			android:id="@+id/ad" 
+			android:visibility="gone"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			app:backgroundColor="#000000"
+			app:primaryTextColor="#FFFFFF"
+			app:secondaryTextColor="#CCCCCC"
+			app:keywords="Oslo, Norway" / -->
+     </FrameLayout>
+    
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Mobile Queue</string>
+    <string name="app_descrip">Draw queue ticket number from your mobile phone and get updated with the realtime queue status information</string>
+    <string name="app_credits">"All queues for different organizations reside on one central server qte.yourtaste.no\n\nIcon derived from Tango Desktop Project under a public domain license.  http://tango.freedesktop.org"</string>
+
+    <string name="template_user_agent">"%%s/%%s (Linux; Android)"</string>
+    <string name="template_define_url">"http://qte.yourtaste.no/qte?%s"</string>
+
+    <string name="widget_name">MobileQueue Widget</string>
+
+    <string name="widget_loading">"Loading realtime queue info"</string>
+    <string name="widget_error">No queue info found</string>
+
+    <string name="search_label">Mobile Queue search</string>
+    <string name="search_hint">Keyword for a service</string>
+
+	<!-- strings in menubar -->
+    <string name="mq_menubar_search">Search</string>
+    <string name="mq_menubar_settings">Settings</string>
+    <string name="mq_menubar_about">About</string>
+    
+    <!-- strings in start page mobile queue view -->
+    <string name="mq_start_title">Mobile Queue!</string>
+    
+    <!-- strings in queue start page -->
+    <string name="mq_sp_favs">Favourites</string>
+    <string name="mq_sp_favs_desc">Holding the lastest favourable service items</string>
+    <string name="mq_sp_grps">Service Groups</string>
+    
+    <!-- strings in queue view -->
+    <string name="mq_view_pnr">Processing number</string>
+    <string name="mq_view_nnr">Next number</string>
+    
+    <!-- strings in queue ticket view -->
+    <string name="mq_ticket_preced">People standing before you:</string>
+    <string name="mq_ticket_waitingtime">The estimated waiting minutes:</string>
+    <string name="mq_ticket_notes">Reminder!</string>
+    
+    <!-- strings required in model -->
+    <string name="mq_model_ui_service_group_caption">Service Groups</string>
+    <string name="mq_model_ui_service_group_details">List of groups that provide Mobile Queue service.</string>
+    <string name="mq_model_ui_favorites_caption">Favorites</string>
+    <string name="mq_model_ui_favorites_details">List of historical Mobile Queue services you used.</string>
+    <string name="mq_model_ui_ticket_lable_due_str">Due in %s minutes</string>
+    <string name="mq_model_ui_ticket_lable_overdue_str">Overdue in %s minutes</string>
+    <!-- 
+    <string name="mq_model_ui_favorites_caption">Favorites</string>
+    <string name="mq_model_ui_favorites_caption">Favorites</string>
+    <string name="mq_model_ui_favorites_caption">Favorites</string>
+    <string name="mq_model_ui_favorites_caption">Favorites</string>
+     -->
+    <!-- mq ticket dialog -->
+    <string name="mqticket_dialog_ok">OK</string>
+    <string name="mqticket_dialog_cancel">Cancel</string>
+    
+
+</resources>

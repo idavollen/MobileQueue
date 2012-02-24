@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="WidgetBackground">
+        <item name="android:background">@xml/widget_bg</item>
+    </style>
+
+    <style name="BulletPoint">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text" />
+
+    <style name="Text.Loading">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.WordTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <style name="Text.QueueNr">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF00FFBB</item>
+    </style>
+    
+    <style name="Text.TicketName">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFF8800</item>
+    </style>
+
+    <style name="Text.WordType">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <style name="Text.WgtDigitsLeft">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Definition">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <style name="LoadingProgress">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_spin</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+    </style>
+
+    <style name="MobileQueueTitle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+</resources>

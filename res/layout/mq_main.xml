@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="58dip"
+        android:layout_weight="1"
+        android:padding="0dip"
+        android:orientation="horizontal"
+        android:background="@drawable/title_bg">
+        
+        <ImageButton
+        	android:id="@+id/mq_main_ticket_btn"
+            android:layout_width="24dip"
+            android:layout_height="24dip"            
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:gravity="right"
+            android:padding="3dip"
+            android:paddingLeft="21dip"
+        	android:src="@drawable/wgt_logo"
+        	android:background="@drawable/title_bg" />        
+            
+        <TextView
+            android:id="@+id/mqtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Mobile Queue" />
+            
+        <ImageView
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"            
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:padding="10dip"
+            android:paddingLeft="20dip"
+        	android:src="@drawable/more" />
+
+    </LinearLayout> 
+<!--  
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_marginLeft="10dip"
+            android:visibility="invisible"
+            android:indeterminateOnly="true"
+            android:indeterminateDrawable="@drawable/progress_spin"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDuration="3500" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:text="@string/mq_start_title"
+            style="@style/MobileQueueTitle" />
+
+    </LinearLayout>
+    -->
+	
+	<ExpandableListView android:id="@+id/mqMainlist"
+            android:layout_width="fill_parent" 
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+</LinearLayout>
